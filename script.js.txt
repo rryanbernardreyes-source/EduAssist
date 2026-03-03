@@ -1,0 +1,12 @@
+function getAnswer() {
+    let question = document.getElementById("question").value;
+    let answer = "Sorry, I’m still learning!"; // default answer
+
+    if (question.toLowerCase().includes("homework")) {
+        answer = "Make sure to read your notes and try step by step!";
+    } else if (question.toLowerCase().includes("exam")) {
+        answer = "Stay calm, review your lessons, and rest well!";
+    }
+
+    document.getElementById("answer").innerText = answer;
+}
